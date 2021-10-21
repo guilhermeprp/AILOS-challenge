@@ -1,0 +1,14 @@
+.navbar {
+  height: 100vh;
+  width: min-content;
+
+  padding: 10px;
+  background: var(--blue);
+}
+
+.navbar .navbar__contents {
+}
+
+.navbar .navbar__contents p {
+  color: var(--white);
+}

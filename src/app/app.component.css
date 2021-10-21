@@ -1,0 +1,7 @@
+.body {
+  display: flex;
+}
+
+.body__formCpf__wrapper {
+  width: 100%;
+}
