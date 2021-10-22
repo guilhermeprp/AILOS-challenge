@@ -2,9 +2,13 @@
 :root {
   --white: #ffffff;
   --black: #000000;
+  --grey: #808080;
+  --silver: #c0c0c0;
+  --red: #ff0000;
 
   --blue: #1b5c7c;
   --blue__light: #e6eef1;
+  --red__alpha50: hsla(0, 100%, 50%, 0.5);
 }
 
 body,
@@ -16,6 +20,17 @@ html {
 * {
   margin: 0;
   padding: 0;
+  border: 0;
+  outline: 0;
 
   box-sizing: border-box;
+
+  font-weight: normal;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
 }

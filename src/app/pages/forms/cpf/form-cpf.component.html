@@ -1,0 +1,44 @@
+<div class="body__content">
+  <app-header> </app-header>
+  <section class="cpf__form__start">
+    <h2>Informe o CPF do futuro cooperado (a)</h2>
+    <p>
+      Se necessário, você poderá duplicar uma conta existente ou pausar e
+      retornar este cadastro futuramente.
+    </p>
+    <p>Digite apenas os números (sem pontos ou traços).</p>
+
+    <form class="cpf__form" (submit)="submitHandler()">
+      <div class="cpf__form__input__wrapper">
+        <label>
+          <h3 class="cpf__form__input__label">CPF</h3>
+          <input
+            required
+            minlength="11"
+            [(ngModel)]="cpfInputValue"
+            name="inputCpf"
+            type="text"
+            placeholder="000.000.000-00"
+            class="cpf__form__input"
+            (change)="changeHandler()"
+            (keydown)="clearError()"
+            [class]="error ? 'input-error' : ''"
+          />
+        </label>
+        <button
+          (click)="clickHandler()"
+          type="button"
+          class="cpf__form__search-button"
+        >
+          Consultar por CPF
+        </button>
+      </div>
+      <div *ngIf="error" class="cpf__form__error-msg">{{ errorMsg }}</div>
+
+      <p>{{ cpfInputValue }}</p>
+    </form>
+    <app-info-cards> </app-info-cards>
+  </section>
+
+  <app-footer [confirm]="submitted"> </app-footer>
+</div>

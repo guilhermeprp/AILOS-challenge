@@ -1,0 +1,36 @@
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+
+  padding: 1rem 1.5rem;
+
+  background: var(--white);
+}
+
+.footer > button {
+  flex: 1 0;
+
+  min-width: 165px;
+  padding: 13px 1rem;
+}
+
+.footer .footer__button-tip {
+  background: var(--white);
+  border: 1px solid var(--blue);
+
+  color: var(--blue);
+}
+
+.footer .footer__button-submit {
+  background: var(--blue);
+  border: 1px solid var(--blue);
+
+  color: var(--white);
+}
+
+@media (min-width: 500px) {
+  .footer > button {
+    flex: 0;
+  }
+}
