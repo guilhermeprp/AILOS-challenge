@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnChanges } from '@angular/core';
 import { CooperadoSelected } from 'src/app/pages/forms/cooperado.model';
 import { ICard } from './card/card.model';
 
@@ -7,14 +7,14 @@ import { ICard } from './card/card.model';
   template: `<app-card class="info-card__row" [cardContent]="list"></app-card>`,
   styleUrls: ['./row-cards.component.css'],
 })
-export class InfoCardsComponent implements OnInit {
+export class InfoCardsComponent implements OnChanges {
   @Input() cardData?: CooperadoSelected | void;
 
   list!: Array<ICard>;
 
   constructor() {}
 
-  ngOnInit(): void {
+  ngOnChanges(): void {
     this.list = [
       {
         titulo: 'Situação cadastral do CPF',
@@ -22,7 +22,7 @@ export class InfoCardsComponent implements OnInit {
         categoria1: 'Nome',
         content1: this.cardData!.pessoa.nome,
         categoria2: 'Situação do CPF',
-        content2: 'Regular',
+        content2: this.cardData!.pessoa.situacao,
         type: 'person',
       },
       {

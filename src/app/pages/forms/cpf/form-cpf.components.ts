@@ -1,28 +1,25 @@
-//Favor ler o README.md contido na pastaforms
-
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { mask } from '../../../../utils/mask';
 import dataJson from '../../../../data/data.json';
 import { CpfSearch } from 'src/app/hook/cpf.action';
 import { CooperadoSelected } from '../cooperado.model';
 import { CpfCooperadoValidate } from 'src/utils/cpf-cooperado-validate';
 
+// !Favor ler o README.md contido na pasta forms
 @Component({
   selector: 'app-form-cpf',
   templateUrl: './form-cpf.component.html',
   styleUrls: ['./form-cpf.component.css'],
 })
-export class FormCpfComponent implements OnInit {
-  cpfInputValue: string = '';
+export class FormCpfComponent {
   error: Boolean = false;
   errorMsg: string = '';
   validCpf: Boolean = false;
   cooperadoSelecionado?: CooperadoSelected | void;
   cpfPesquisado!: String;
   cpfValidate!: [boolean, string];
-
-  constructor() {}
-  ngOnInit(): void {}
+  @Input() cpfInputValue: string = '';
 
   changeHandler() {
     this.cpfInputValue = mask['cpf'](this.cpfInputValue);

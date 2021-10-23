@@ -9,6 +9,8 @@
 
   --blue: #1b5c7c;
   --blue__light: #e6eef1;
+  --white__alpha70: hsla(0, 0%, 100%, 0.7);
+  --white__alpha60: hsla(0, 0%, 100%, 0.6);
   --red__alpha50: hsla(0, 100%, 50%, 0.5);
 }
 

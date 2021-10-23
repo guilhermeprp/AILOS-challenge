@@ -33,15 +33,19 @@
   color: var(--grey);
 }
 
-.info-card__content__row__icon.devedor {
-  color: var(--red) !important;
+.info-card__content__row__icon.suspenso {
+  color: var(--red);
 }
 
 .info-card__content__row__icon.regular {
-  color: var(--green) !important;
+  color: var(--green);
 }
 
-.info-card h5 {
+.info-card :where(h5, h3, p) {
+  margin: 0;
+}
+
+.info-card p {
   font-size: 14px;
   color: var(--grey);
 }

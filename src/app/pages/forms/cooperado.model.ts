@@ -1,11 +1,11 @@
 export interface CooperadoSelected {
   cpf: string;
-  pessoa: Cooperado;
+  pessoa: ICooperado;
 }
 
-export interface Cooperado {
+export interface ICooperado {
   nome: string;
   conta_corrente: string;
   conta_aplicacao: string;
-  situacao?: string;
+  situacao: string;
 }

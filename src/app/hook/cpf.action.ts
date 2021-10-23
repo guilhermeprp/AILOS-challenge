@@ -11,6 +11,7 @@ export const CpfSearch = (data: Array<object>, cpfPesquisado: String) => {
           nome: props.nome,
           conta_corrente: props.conta_corrente,
           conta_aplicacao: props.conta_aplicacao,
+          situacao: props.situacao,
         },
       };
     }

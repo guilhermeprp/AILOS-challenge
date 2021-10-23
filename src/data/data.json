@@ -24,7 +24,8 @@
     "tipo_sanguineo": "A-",
     "cor": "laranja",
     "conta_corrente": "0109037-2",
-    "conta_aplicacao": "46160282-4"
+    "conta_aplicacao": "46160282-4",
+    "situacao": "Regular"
   },
   {
     "nome": "Rafaela Márcia Andreia Silva",
@@ -51,7 +52,8 @@
     "tipo_sanguineo": "AB+",
     "cor": "verde",
     "conta_corrente": "1086397-4",
-    "conta_aplicacao": "1099486-6"
+    "conta_aplicacao": "1099486-6",
+    "situacao": "Suspenso"
   },
   {
     "nome": "Eduardo Gabriel Nathan Dias",
@@ -78,7 +80,8 @@
     "tipo_sanguineo": "A+",
     "cor": "preto",
     "conta_corrente": "1173814-1",
-    "conta_aplicacao": "1108903-2"
+    "conta_aplicacao": "1108903-2",
+    "situacao": "Suspenso"
   },
   {
     "nome": "Luan Nicolas Araújo",
@@ -105,7 +108,8 @@
     "tipo_sanguineo": "AB+",
     "cor": "laranja",
     "conta_corrente": "116233-0",
-    "conta_aplicacao": "57742-1"
+    "conta_aplicacao": "57742-1",
+    "situacao": "Suspenso"
   },
   {
     "nome": "Luís Vinicius da Rosa",
@@ -132,7 +136,8 @@
     "tipo_sanguineo": "A+",
     "cor": "vermelho",
     "conta_corrente": "1072552-0",
-    "conta_aplicacao": "1862328-5"
+    "conta_aplicacao": "1862328-5",
+    "situacao": "Regular"
   },
   {
     "nome": "Elisa Cecília Figueiredo",
@@ -159,7 +164,8 @@
     "tipo_sanguineo": "A+",
     "cor": "vermelho",
     "conta_corrente": "46062109-9",
-    "conta_aplicacao": "1045892-1"
+    "conta_aplicacao": "1045892-1",
+    "situacao": "Regular"
   },
   {
     "nome": "Carlos Eduardo Julio Otávio Oliveira",
@@ -186,7 +192,8 @@
     "tipo_sanguineo": "A-",
     "cor": "laranja",
     "conta_corrente": "02437665-2",
-    "conta_aplicacao": "1800297-3"
+    "conta_aplicacao": "1800297-3",
+    "situacao": "Regular"
   },
   {
     "nome": "Yasmin Silvana Farias",
@@ -213,7 +220,8 @@
     "tipo_sanguineo": "A-",
     "cor": "preto",
     "conta_corrente": "38548-4",
-    "conta_aplicacao": "281003-4"
+    "conta_aplicacao": "281003-4",
+    "situacao": "Regular"
   },
   {
     "nome": "Paulo Henrique Raimundo Cardoso",
@@ -240,7 +248,8 @@
     "tipo_sanguineo": "O-",
     "cor": "preto",
     "conta_corrente": "1572218-5",
-    "conta_aplicacao": "166470-0"
+    "conta_aplicacao": "166470-0",
+    "situacao": "Regular"
   },
   {
     "nome": "Sérgio Antonio Corte Real",
@@ -267,7 +276,8 @@
     "tipo_sanguineo": "B-",
     "cor": "roxo",
     "conta_corrente": "45685-7",
-    "conta_aplicacao": "05697524-9"
+    "conta_aplicacao": "05697524-9",
+    "situacao": "Regular"
   },
   {
     "nome": "Caio Carlos Barbosa",
@@ -294,7 +304,8 @@
     "tipo_sanguineo": "B+",
     "cor": "roxo",
     "conta_corrente": "37243023-0",
-    "conta_aplicacao": "03028-7"
+    "conta_aplicacao": "03028-7",
+    "situacao": "Regular"
   },
   {
     "nome": "Nathan Pietro Manoel Almada",
@@ -321,7 +332,8 @@
     "tipo_sanguineo": "B+",
     "cor": "roxo",
     "conta_corrente": "1069693-3",
-    "conta_aplicacao": "1036267-3"
+    "conta_aplicacao": "1036267-3",
+    "situacao": "Regular"
   },
   {
     "nome": "Elisa Louise Marina Ramos",
@@ -348,7 +360,8 @@
     "tipo_sanguineo": "A+",
     "cor": "verde",
     "conta_corrente": "166310-0",
-    "conta_aplicacao": "37568544-2"
+    "conta_aplicacao": "37568544-2",
+    "situacao": "Suspenso"
   },
   {
     "nome": "Alícia Olivia Sandra dos Santos",
@@ -375,7 +388,8 @@
     "tipo_sanguineo": "A-",
     "cor": "vermelho",
     "conta_corrente": "1720174-3",
-    "conta_aplicacao": "46002686-0"
+    "conta_aplicacao": "46002686-0",
+    "situacao": "Suspenso"
   },
   {
     "nome": "Diogo Raul Gonçalves",
@@ -402,7 +416,8 @@
     "tipo_sanguineo": "A+",
     "cor": "azul",
     "conta_corrente": "75819-0",
-    "conta_aplicacao": "161589-0"
+    "conta_aplicacao": "161589-0",
+    "situacao": "Regular"
   },
   {
     "nome": "Eduarda Aline Aparício",
@@ -429,7 +444,8 @@
     "tipo_sanguineo": "O-",
     "cor": "preto",
     "conta_corrente": "14355-2",
-    "conta_aplicacao": "1807858-9"
+    "conta_aplicacao": "1807858-9",
+    "situacao": "Regular"
   },
   {
     "nome": "Noah Sebastião Silva",
@@ -456,7 +472,8 @@
     "tipo_sanguineo": "AB-",
     "cor": "verde",
     "conta_corrente": "91563-2",
-    "conta_aplicacao": "09684-0"
+    "conta_aplicacao": "09684-0",
+    "situacao": "Regular"
   },
   {
     "nome": "Beatriz Rafaela Teresinha Moraes",
@@ -483,7 +500,8 @@
     "tipo_sanguineo": "AB+",
     "cor": "preto",
     "conta_corrente": "1090735-1",
-    "conta_aplicacao": "50407109-8"
+    "conta_aplicacao": "50407109-8",
+    "situacao": "Suspenso"
   },
   {
     "nome": "Yuri Luan Vieira",
@@ -510,7 +528,8 @@
     "tipo_sanguineo": "AB+",
     "cor": "preto",
     "conta_corrente": "210369-9",
-    "conta_aplicacao": "27764882-6"
+    "conta_aplicacao": "27764882-6",
+    "situacao": "Suspenso"
   },
   {
     "nome": "Isabelle Lívia Sebastiana Pires",
@@ -537,7 +556,8 @@
     "tipo_sanguineo": "A+",
     "cor": "laranja",
     "conta_corrente": "03555270-7",
-    "conta_aplicacao": "1207945-6"
+    "conta_aplicacao": "1207945-6",
+    "situacao": "Suspenso"
   },
   {
     "nome": "Emilly Alícia Rafaela Baptista",
@@ -564,7 +584,8 @@
     "tipo_sanguineo": "B-",
     "cor": "verde",
     "conta_corrente": "50478094-9",
-    "conta_aplicacao": "1323705-0"
+    "conta_aplicacao": "1323705-0",
+    "situacao": "Regular"
   },
   {
     "nome": "Davi Anderson Fernando Cardoso",
@@ -591,7 +612,8 @@
     "tipo_sanguineo": "A+",
     "cor": "laranja",
     "conta_corrente": "1043699-5",
-    "conta_aplicacao": "1115978-2"
+    "conta_aplicacao": "1115978-2",
+    "situacao": "Regular"
   },
   {
     "nome": "Sara Giovanna Pinto",
@@ -618,7 +640,8 @@
     "tipo_sanguineo": "AB-",
     "cor": "preto",
     "conta_corrente": "27426418-7",
-    "conta_aplicacao": "1062017-6"
+    "conta_aplicacao": "1062017-6",
+    "situacao": "Regular"
   },
   {
     "nome": "Isabel Márcia Pietra da Costa",
@@ -645,7 +668,8 @@
     "tipo_sanguineo": "O+",
     "cor": "vermelho",
     "conta_corrente": "05549-0",
-    "conta_aplicacao": "0238463-9"
+    "conta_aplicacao": "0238463-9",
+    "situacao": "Regular"
   },
   {
     "nome": "Tereza Sarah Pinto",
@@ -672,7 +696,8 @@
     "tipo_sanguineo": "A-",
     "cor": "laranja",
     "conta_corrente": "07170-5",
-    "conta_aplicacao": "1027377-8"
+    "conta_aplicacao": "1027377-8",
+    "situacao": "Regular"
   },
   {
     "nome": "Anderson Luan Mateus Sales",
@@ -699,7 +724,8 @@
     "tipo_sanguineo": "AB-",
     "cor": "amarelo",
     "conta_corrente": "19498-5",
-    "conta_aplicacao": "71137-3"
+    "conta_aplicacao": "71137-3",
+    "situacao": "Regular"
   },
   {
     "nome": "Lúcia Melissa Daniela Almada",
@@ -726,7 +752,8 @@
     "tipo_sanguineo": "A-",
     "cor": "vermelho",
     "conta_corrente": "41062-2",
-    "conta_aplicacao": "241625-5"
+    "conta_aplicacao": "241625-5",
+    "situacao": "Suspenso"
   },
   {
     "nome": "Carlos Eduardo Carlos Bento Barbosa",
@@ -753,7 +780,8 @@
     "tipo_sanguineo": "A+",
     "cor": "laranja",
     "conta_corrente": "1012429-2",
-    "conta_aplicacao": "1249199-3"
+    "conta_aplicacao": "1249199-3",
+    "situacao": "Regular"
   },
   {
     "nome": "Rafael Hugo Fábio Barbosa",
@@ -780,7 +808,8 @@
     "tipo_sanguineo": "AB+",
     "cor": "amarelo",
     "conta_corrente": "0072004-6",
-    "conta_aplicacao": "1131571-7"
+    "conta_aplicacao": "1131571-7",
+    "situacao": "Regular"
   },
   {
     "nome": "Diego Fernando Kaique Rodrigues",
@@ -807,6 +836,7 @@
     "tipo_sanguineo": "B-",
     "cor": "amarelo",
     "conta_corrente": "32954-1",
-    "conta_aplicacao": "1197341-8"
+    "conta_aplicacao": "1197341-8",
+    "situacao": "Suspenso"
   }
 ]
