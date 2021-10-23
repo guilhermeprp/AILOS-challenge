@@ -1,0 +1,58 @@
+.info-card {
+  display: flex;
+  flex-flow: column nowrap;
+
+  min-width: 300px;
+  padding: 24px;
+
+  border: 1px solid var(--silver);
+  background: var(--white);
+}
+
+.info-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.info-card__subtitle {
+  font-size: 14px;
+  color: var(--grey);
+}
+
+.info-card__content__row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+}
+
+.info-card__content__row__icon {
+  font-size: 28px;
+  color: var(--grey);
+}
+
+.info-card__content__row__icon.devedor {
+  color: var(--red) !important;
+}
+
+.info-card__content__row__icon.regular {
+  color: var(--green) !important;
+}
+
+.info-card h5 {
+  font-size: 14px;
+  color: var(--grey);
+}
+
+.info-card__link__wrapper {
+  margin-top: 2rem;
+}
+
+.info-card__link__wrapper a {
+  font-weight: 600;
+  color: var(--blue);
+
+  text-decoration: none;
+}

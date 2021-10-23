@@ -1,6 +1,11 @@
+//Favor ler o README.md contido na pastaforms
+
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { mask } from '../../../../utils/mask';
-import { FormGroup } from '@angular/forms';
+import dataJson from '../../../../data/data.json';
+import { CpfSearch } from 'src/app/hook/cpf.action';
+import { CooperadoSelected } from '../cooperado.model';
+import { CpfCooperadoValidate } from 'src/utils/cpf-cooperado-validate';
 
 @Component({
   selector: 'app-form-cpf',
@@ -11,9 +16,10 @@ export class FormCpfComponent implements OnInit {
   cpfInputValue: string = '';
   error: Boolean = false;
   errorMsg: string = '';
-  submitted: boolean = false;
-
-  @ViewChild('cpfInput') declare el: ElementRef;
+  validCpf: Boolean = false;
+  cooperadoSelecionado?: CooperadoSelected | void;
+  cpfPesquisado!: String;
+  cpfValidate!: [boolean, string];
 
   constructor() {}
   ngOnInit(): void {}
@@ -22,27 +28,25 @@ export class FormCpfComponent implements OnInit {
     this.cpfInputValue = mask['cpf'](this.cpfInputValue);
   }
 
-  clickHandler(): string {
-    this.cpfInputValue = mask['cpf'](this.cpfInputValue);
+  clickHandler() {
+    this.cooperadoSelecionado = CpfSearch(dataJson, this.cpfInputValue);
 
-    if (this.cpfInputValue === '') {
-      this.error = true;
-      return (this.errorMsg = 'Por favor preencha o campo.');
+    this.cpfValidate = CpfCooperadoValidate(
+      this.cpfInputValue,
+      this.cooperadoSelecionado
+    );
+
+    this.error = this.cpfValidate[0];
+    this.errorMsg = this.cpfValidate[1];
+
+    if (this.error) {
+      return (this.validCpf = false);
     }
 
-    if (this.cpfInputValue.length < 11) {
-      this.error = true;
-      return (this.errorMsg = 'O CPF deve conter pelo menos 11 dígitos.');
-    }
-
-    this.error = false;
-    this.submitted = true;
-    return this.cpfInputValue;
+    return (this.validCpf = true);
   }
 
   clearError() {
     this.error = false;
   }
-
-  submitHandler() {}
 }

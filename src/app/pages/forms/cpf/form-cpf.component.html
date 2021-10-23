@@ -1,5 +1,5 @@
 <div class="body__content">
-  <app-header> </app-header>
+  <app-header></app-header>
   <section class="cpf__form__start">
     <h2>Informe o CPF do futuro cooperado (a)</h2>
     <p>
@@ -8,7 +8,7 @@
     </p>
     <p>Digite apenas os números (sem pontos ou traços).</p>
 
-    <form class="cpf__form" (submit)="submitHandler()">
+    <form class="cpf__form">
       <div class="cpf__form__input__wrapper">
         <label>
           <h3 class="cpf__form__input__label">CPF</h3>
@@ -26,19 +26,18 @@
           />
         </label>
         <button
-          (click)="clickHandler()"
           type="button"
           class="cpf__form__search-button"
+          (click)="clickHandler()"
         >
           Consultar por CPF
         </button>
+        <div *ngIf="error" class="cpf__form__error-msg">{{ errorMsg }}</div>
       </div>
-      <div *ngIf="error" class="cpf__form__error-msg">{{ errorMsg }}</div>
-
-      <p>{{ cpfInputValue }}</p>
     </form>
-    <app-info-cards> </app-info-cards>
+    <app-row-cards *ngIf="validCpf" [cardData]="cooperadoSelecionado">
+    </app-row-cards>
   </section>
 
-  <app-footer [confirm]="submitted"> </app-footer>
+  <app-footer [confirm]="validCpf"> </app-footer>
 </div>

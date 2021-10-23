@@ -24,11 +24,17 @@
   color: var(--grey);
 }
 
+.cpf__form label {
+  width: 100%;
+}
+
 .cpf__form__input__wrapper {
+  position: relative;
+
   display: flex;
   flex-flow: row wrap;
   align-items: flex-end;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .cpf__form__input__label {
@@ -39,7 +45,7 @@
 }
 
 .cpf__form__input {
-  width: 300px;
+  width: 100%;
   padding: 7px;
 
   border: 1px solid var(--grey);
@@ -60,12 +66,32 @@
 
 .input-error {
   border: 1px solid var(--red);
-  box-shadow: 0 0 5px var(--red__alpha05);
+  box-shadow: 0 0 5px var(--red__alpha50);
 
   color: var(--red);
 }
 
 .cpf__form__error-msg {
+  position: absolute;
+  left: 0;
+  top: 70px;
+
   color: var(--red);
   font-size: 14px;
+}
+
+@media (min-width: 615px) {
+  .cpf__form__input__wrapper {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 475px) {
+  .cpf__form label {
+    width: auto;
+  }
+
+  .cpf__form__input {
+    width: 300px;
+  }
 }

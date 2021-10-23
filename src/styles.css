@@ -5,6 +5,7 @@
   --grey: #808080;
   --silver: #c0c0c0;
   --red: #ff0000;
+  --green: #00b300;
 
   --blue: #1b5c7c;
   --blue__light: #e6eef1;
@@ -33,4 +34,13 @@ html {
 
 button {
   cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
