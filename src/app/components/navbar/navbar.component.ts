@@ -1,16 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DoCheck, Input, OnInit } from '@angular/core';
+import { handleResize } from 'src/utils/window-size';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css', '../../../assets/font-icons.css'],
 })
-export class NavBarComponent implements OnInit {
-  expand: boolean = false;
-
+export class NavBarComponent implements OnInit, DoCheck {
+  @Input() expand: boolean = false;
+  width!: number;
   constructor() {}
-  ngOnInit() {}
+
   handleExpand() {
     this.expand = !this.expand;
+  }
+
+  ngOnInit(): void {
+    this.width = handleResize().width;
+  }
+
+  ngDoCheck() {
+    this.width = handleResize().width;
   }
 }

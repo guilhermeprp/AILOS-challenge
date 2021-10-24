@@ -1,3 +1,14 @@
+@keyframes SlideLeft {
+  0% {
+    opacity: 0;
+    margin-left: 100vw;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
 .info-card__row {
   display: flex;
   flex-flow: row nowrap;
@@ -6,4 +17,26 @@
   margin-top: 2rem;
 
   overflow: auto hidden;
+}
+
+/* Custom ScrollBar */
+/* width */
+::-webkit-scrollbar {
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--blue__light);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 90px;
+  background: var(--grey);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue);
 }

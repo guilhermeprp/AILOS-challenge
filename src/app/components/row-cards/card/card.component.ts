@@ -19,8 +19,8 @@ import { ICard } from './card.model';
           {{ item.type }}
         </mat-icon>
         <div>
-          <h5>{{ item.categoria1 }}</h5>
-          <p>{{ item.content1 }}</p>
+          <h5 class="info-card__category">{{ item.categoria1 }}</h5>
+          <p class="info-card__category__content">{{ item.content1 }}</p>
         </div>
       </div>
 
@@ -34,8 +34,8 @@ import { ICard } from './card.model';
           {{ item.content2 === 'Suspenso' ? 'cancel' : 'check_circle_outline' }}
         </mat-icon>
         <div>
-          <h5>{{ item.categoria2 }}</h5>
-          <p>{{ item.content2 }}</p>
+          <h5 class="info-card__category">{{ item.categoria2 }}</h5>
+          <p class="info-card__category__content">{{ item.content2 }}</p>
         </div>
       </div>
 

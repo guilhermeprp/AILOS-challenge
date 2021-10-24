@@ -1,0 +1,17 @@
+.header__account__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+
+  position: absolute;
+  right: 20px;
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.header__account__wrapper.notification__mobile {
+  top: 1rem;
+
+  transform: translateY(0);
+}

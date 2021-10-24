@@ -20,6 +20,15 @@
   border: 1px solid var(--blue);
 
   color: var(--blue);
+
+  transition: 0.3s;
+}
+
+.footer .footer__button-tip:hover {
+  border: 1px solid var(--blue__smooth);
+  background: var(--blue__smooth);
+
+  color: var(--white);
 }
 
 .footer .footer__button-submit {
@@ -27,6 +36,13 @@
   border: 1px solid var(--blue);
 
   color: var(--white);
+
+  transition: 0.3s;
+}
+
+.footer .footer__button-submit:hover {
+  background: var(--blue__smooth);
+  border: 1px solid var(--blue__smooth);
 }
 
 @media (min-width: 500px) {

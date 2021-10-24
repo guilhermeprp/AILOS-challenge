@@ -1,0 +1,22 @@
+.viacredi-button {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: var(--white);
+  padding: 5px 12px;
+
+  border: 1px solid var(--blue);
+  border-radius: 99px;
+
+  color: var(--blue);
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.viacredi-button:hover {
+  background: var(--blue);
+
+  color: var(--white);
+}

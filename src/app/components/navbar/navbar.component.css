@@ -77,6 +77,14 @@
   font-weight: 100;
 }
 
+.navbar__profile {
+  position: absolute;
+  bottom: 2rem;
+  right: 50%;
+
+  transform: translateX(50%);
+}
+
 @keyframes Expand {
   0% {
     transform: scaleX(0);

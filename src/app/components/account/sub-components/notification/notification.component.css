@@ -1,0 +1,79 @@
+@keyframes Swing {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(-45deg);
+  }
+  50% {
+    transform: rotateZ(45deg);
+  }
+  75% {
+    transform: rotateZ(-45deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes NotSwing {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(45deg);
+  }
+  50% {
+    transform: rotateZ(-45deg);
+  }
+  75% {
+    transform: rotateZ(45deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.material-icons-outlined.notification-icon {
+  position: relative;
+  top: 5px;
+
+  width: 30px;
+
+  cursor: pointer;
+
+  color: var(--blue);
+  font-size: 30px;
+}
+
+.material-icons-outlined.notification-icon:hover {
+  animation: 0.5s Swing ease-out forwards;
+}
+
+.material-icons-outlined.notification-icon:hover .badge {
+  animation: 0.5s NotSwing ease-out forwards;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 15px;
+  height: 15px;
+
+  background: var(--red);
+  border-radius: 50%;
+
+  color: var(--white);
+  font-size: 10px;
+  font-weight: bold;
+
+  text-align: center;
+  text-align-last: center;
+}
+
+.badge > span {
+  position: relative;
+  top: 2.5px;
+}

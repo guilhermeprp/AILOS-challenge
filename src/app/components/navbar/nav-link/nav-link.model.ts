@@ -1,4 +1,4 @@
-export interface INavLinks {
+export interface INavLink {
   fontSet: string;
   icon: string;
   text: string;

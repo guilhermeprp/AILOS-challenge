@@ -1,3 +1,14 @@
+@keyframes SlideLeft {
+  0% {
+    opacity: 0;
+    margin-left: 100vw;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+
 .info-card {
   display: flex;
   flex-flow: column nowrap;
@@ -7,6 +18,8 @@
 
   border: 1px solid var(--silver);
   background: var(--white);
+
+  animation: 1s SlideLeft ease forwards;
 }
 
 .info-card h3 {
@@ -45,9 +58,13 @@
   margin: 0;
 }
 
-.info-card p {
+.info-card__category {
   font-size: 14px;
   color: var(--grey);
+}
+
+.info-card__category__content {
+  font-size: 16px;
 }
 
 .info-card__link__wrapper {
@@ -55,6 +72,7 @@
 }
 
 .info-card__link__wrapper a {
+  font-size: 16px;
   font-weight: 600;
   color: var(--blue);
 

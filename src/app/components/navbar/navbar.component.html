@@ -1,6 +1,6 @@
-<nav class="navbar" [class]="expand ? 'expanded' : ''">
+<nav class="navbar" [class]="{ expanded: expand }">
   <a href="#" class="logo">
-    <img src="../../../assets/images/ailos_logo.png" alt="Ailos" />
+    <img src="./assets/images/ailos_logo.png" alt="Ailos" />
   </a>
   <div class="navbar__contents">
     <a href="#" class="navbar__contents__row__icons" (click)="handleExpand()">
@@ -10,5 +10,11 @@
     </a>
 
     <app-nav-link class="navbar__contents" [expanded]="expand"></app-nav-link>
+
+    <app-profile
+      class="navbar__profile"
+      *ngIf="width < 730"
+      [expanded]="expand"
+    ></app-profile>
   </div>
 </nav>

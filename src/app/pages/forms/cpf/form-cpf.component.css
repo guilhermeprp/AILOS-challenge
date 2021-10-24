@@ -64,6 +64,13 @@
   background: var(--blue);
 
   color: var(--white);
+
+  transition: 0.3s;
+}
+
+.cpf__form__search-button:hover {
+  border: 1px solid var(--blue__smooth);
+  background: var(--blue__smooth);
 }
 
 .input-error {

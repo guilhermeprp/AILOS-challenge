@@ -1,6 +1,7 @@
 <div class="body__content">
   <app-header></app-header>
   <section class="cpf__form__start">
+    <app-progress-line></app-progress-line>
     <h2>Informe o CPF do futuro cooperado (a)</h2>
     <p>
       Se necessário, você poderá duplicar uma conta existente ou pausar e
@@ -22,7 +23,7 @@
             class="cpf__form__input"
             (change)="changeHandler()"
             (keydown)="clearError()"
-            [class]="error ? 'input-error' : ''"
+            [class]="{ 'input-error': error }"
           />
         </label>
         <button

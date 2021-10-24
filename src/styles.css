@@ -1,16 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --white: #ffffff;
   --black: #000000;
+  --white: #ffffff;
   --grey: #808080;
   --silver: #c0c0c0;
   --red: #ff0000;
   --green: #00b300;
 
-  --blue: #1b5c7c;
+  --blue: #005c7f;
+  --blue__darker: #00374d;
+  --blue__smooth: #a2bdce;
   --blue__light: #e6eef1;
+
   --white__alpha70: hsla(0, 0%, 100%, 0.7);
   --white__alpha60: hsla(0, 0%, 100%, 0.6);
+
   --red__alpha50: hsla(0, 100%, 50%, 0.5);
 }
 
@@ -42,6 +46,7 @@ html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;

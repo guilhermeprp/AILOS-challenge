@@ -1,0 +1,35 @@
+.avatar__wrapper {
+  position: relative;
+
+  height: 40px;
+  width: 40px;
+
+  background: var(--blue);
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+  transition: 0.5s;
+}
+
+.avatar__wrapper.light-background {
+  background: var(--blue__light);
+  border: 1px solid var(--blue__light);
+}
+
+.avatar__wrapper.light-background.expand {
+  width: 70px;
+  height: 70px;
+}
+
+.avatar__wrapper img {
+  position: absolute;
+  left: 50%;
+
+  height: 100%;
+
+  transform: translateX(-50%);
+}

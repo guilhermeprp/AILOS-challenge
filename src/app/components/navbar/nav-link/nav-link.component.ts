@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { INavLinks } from './nav-link.model';
+import { INavLink } from './nav-link.model';
 
 @Component({
   selector: 'app-nav-link',
@@ -8,7 +8,7 @@ import { INavLinks } from './nav-link.model';
       *ngFor="let item of links"
       href="#"
       class="navbar__contents__row__icons"
-      [class]="item.current ? 'current' : ''"
+      [class]="{ current: item.current }"
     >
       <mat-icon fontSet="{{ item.fontSet }}"> {{ item.icon }} </mat-icon>
       <span *ngIf="expanded">{{ item.text }}</span>
@@ -18,7 +18,7 @@ import { INavLinks } from './nav-link.model';
 })
 export class NavLinkComponent implements OnInit {
   @Input() expanded!: boolean;
-  @Input() links: Array<INavLinks> = [
+  @Input() links: Array<INavLink> = [
     {
       fontSet: 'material-icons-round',
       icon: 'search',
