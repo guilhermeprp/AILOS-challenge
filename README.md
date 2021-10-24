@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.11.
 
+## IMPORTANT
+
+You can check the list of valids CPF's for test at `\src\app\pages\forms\README.md`
+
 ## Setup
 
 Run `npm i` to install all dependencies.
