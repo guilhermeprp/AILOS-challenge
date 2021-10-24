@@ -5,7 +5,7 @@ import { ICard } from './card/card.model';
 @Component({
   selector: 'app-row-cards',
   template: `<app-card class="info-card__row" [cardContent]="list"></app-card>`,
-  styleUrls: ['./row-cards.component.css'],
+  styleUrls: ['./row-cards.component.css', '../../../assets/animations.css'],
 })
 export class InfoCardsComponent implements OnChanges {
   @Input() cardData?: CooperadoSelected | void;

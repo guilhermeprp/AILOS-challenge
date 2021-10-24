@@ -1,39 +1,3 @@
-@keyframes Swing {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  25% {
-    transform: rotateZ(-45deg);
-  }
-  50% {
-    transform: rotateZ(45deg);
-  }
-  75% {
-    transform: rotateZ(-45deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-
-@keyframes NotSwing {
-  0% {
-    transform: rotateZ(0deg);
-  }
-  25% {
-    transform: rotateZ(45deg);
-  }
-  50% {
-    transform: rotateZ(-45deg);
-  }
-  75% {
-    transform: rotateZ(45deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-
 .material-icons-outlined.notification-icon {
   position: relative;
   top: 5px;

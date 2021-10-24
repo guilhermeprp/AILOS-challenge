@@ -44,7 +44,7 @@ import { ICard } from './card.model';
       </div>
     </div>
   `,
-  styleUrls: ['./card.component.css'],
+  styleUrls: ['./card.component.css', '../../../../assets/animations.css'],
 })
 export class CardComponent implements OnInit {
   @Input() cardContent!: Array<ICard>;

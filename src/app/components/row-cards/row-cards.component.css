@@ -1,14 +1,3 @@
-@keyframes SlideLeft {
-  0% {
-    opacity: 0;
-    margin-left: 100vw;
-  }
-  100% {
-    opacity: 1;
-    margin-left: 0;
-  }
-}
-
 .info-card__row {
   display: flex;
   flex-flow: row nowrap;

@@ -13,6 +13,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: [
     './notification.component.css',
     '../../../../../assets/font-icons.css',
+    '../../../../../assets/animations.css',
   ],
 })
 export class NotificationComponent implements OnInit {
