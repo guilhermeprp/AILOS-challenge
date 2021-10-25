@@ -5,6 +5,7 @@ import dataJson from '../../../../data/data.json';
 import { CpfSearch } from 'src/app/hook/cpf.action';
 import { CooperadoSelected } from '../cooperado.model';
 import { CpfCooperadoValidate } from 'src/utils/cpf-cooperado-validate';
+import { FormatCpf } from 'src/utils/cpf-formatter';
 
 // !Favor ler o README.md contido na pasta forms
 @Component({
@@ -26,10 +27,12 @@ export class FormCpfComponent {
   }
 
   clickHandler() {
-    this.cooperadoSelecionado = CpfSearch(dataJson, this.cpfInputValue);
+    const formatedCpf = FormatCpf(this.cpfInputValue);
+
+    this.cooperadoSelecionado = CpfSearch(dataJson, formatedCpf);
 
     this.cpfValidate = CpfCooperadoValidate(
-      this.cpfInputValue,
+      formatedCpf,
       this.cooperadoSelecionado
     );
 
